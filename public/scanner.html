@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>URL Threat Scanner | CyberShield</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🛡️</span>
+            Cyber<span class="logo-highlight">Shield</span>
+        </a>
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+        >
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="chatbot.html" class="active">Security Tools</a>
+            <a href="incident.html">Incident Help</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a href="scanner.html" class="nav-button">
+            Get Protected
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-label">
+            MODULE 02
+        </span>
+
+        <h1>URL / Threat Scanner</h1>
+
+        <p>
+            Analyze a URL for common suspicious patterns.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="tool-section">
+
+    <div class="container">
+
+        <div class="tool-card scanner-card">
+
+            <div class="tool-card-header">
+
+                <div class="tool-large-icon">
+                    🔎
+                </div>
+
+                <div>
+                    <h2>Analyze a Website URL</h2>
+
+                    <p>
+                        Enter a URL such as:
+                        <strong>https://example.com</strong>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="scannerForm">
+
+                <label for="urlInput">
+                    Website URL
+                </label>
+
+                <div class="url-input-wrapper">
+
+                    <input
+                        type="url"
+                        id="urlInput"
+                        placeholder="https://example.com"
+                        required
+                        maxlength="2048"
+                    >
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                    >
+                        Scan URL
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <div class="scanner-note">
+
+                <span>ℹ️</span>
+
+                <p>
+                    This is an educational heuristic scanner.
+                    It does not perform a real malware,
+                    reputation or threat-intelligence scan.
+                </p>
+
+            </div>
+
+
+            <div
+                id="scannerLoading"
+                class="loading-box hidden"
+            >
+                Analyzing URL...
+            </div>
+
+
+            <div
+                id="scannerError"
+                class="error-box hidden"
+            ></div>
+
+
+            <div
+                id="scanResult"
+                class="scan-result hidden"
+            >
+
+                <div class="result-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            SCAN RESULT
+                        </span>
+
+                        <h2 id="resultTitle">
+                            Safe
+                        </h2>
+
+                    </div>
+
+                    <div
+                        id="resultBadge"
+                        class="risk-badge"
+                    >
+                        SAFE
+                    </div>
+
+                </div>
+
+
+                <div class="risk-score-area">
+
+                    <div class="risk-score-circle">
+
+                        <strong id="riskScore">
+                            0
+                        </strong>
+
+                        <span>/100</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Risk Score</h3>
+
+                        <p>
+                            Higher scores indicate more
+                            suspicious URL characteristics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="result-details">
+
+                    <div class="detail-item">
+
+                        <span>URL</span>
+
+                        <strong id="resultURL"></strong>
+
+                    </div>
+
+                    <div class="detail-item">
+
+                        <span>Domain</span>
+
+                        <strong id="resultDomain"></strong>
+
+                    </div>
+
+                    <div class="detail-item">
+
+                        <span>HTTPS</span>
+
+                        <strong id="resultHTTPS"></strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="warnings-area">
+
+                    <h3>
+                        Detected observations
+                    </h3>
+
+                    <ul id="warningList"></ul>
+
+                </div>
+
+                <div class="result-disclaimer">
+
+                    ⚠️ Educational result only.
+                    A "Safe" result does not guarantee that
+                    a website is safe.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-bottom">
+        © 2026 CyberShield. Educational project.
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/scanner.js"></script>
+
+</body>
+</html>

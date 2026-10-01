@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CyberShield - Cybersecurity News</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                🛡️ CyberShield
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="chatbot.html">
+                    AI Chatbot
+                </a>
+
+                <a href="scanner.html">
+                    URL Scanner
+                </a>
+
+                <a href="password.html">
+                    Password Security
+                </a>
+
+                <a href="incident.html">
+                    Incident Response
+                </a>
+
+                <a href="news.html" class="active">
+                    News & Alerts
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <h1>
+                    📰 Cybersecurity News & Alerts
+                </h1>
+
+                <p>
+                    Stay updated with the latest cybersecurity
+                    threats, vulnerabilities, attacks and security alerts.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWS SECTION ================= -->
+
+        <section class="news-section">
+
+            <div class="container">
+
+                <!-- SEARCH -->
+
+                <div class="news-search">
+
+                    <input
+                        type="text"
+                        id="newsSearch"
+                        placeholder="Search cybersecurity news..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="searchNews"
+                        class="primary-button"
+                    >
+                        🔍 Search
+                    </button>
+
+                    <button
+                        type="button"
+                        id="clearSearch"
+                        class="secondary-button"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <!-- NEWS STATUS -->
+
+                <div
+                    id="newsStatus"
+                    class="news-status"
+                >
+                    Loading cybersecurity news...
+                </div>
+
+
+                <!-- NEWS CONTAINER -->
+
+                <div
+                    id="newsContainer"
+                    class="news-grid"
+                >
+
+                    <div class="loading">
+                        Loading cybersecurity news...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SECURITY TIPS ================= -->
+
+        <section class="info-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        🛡️ Stay Safe Online
+                    </h2>
+
+                    <p>
+                        Follow these basic cybersecurity practices.
+                    </p>
+
+                </div>
+
+
+                <div class="cards-grid">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            🔐
+                        </div>
+
+                        <h3>
+                            Use Strong Passwords
+                        </h3>
+
+                        <p>
+                            Use long, unique passwords for every
+                            important account.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            🎣
+                        </div>
+
+                        <h3>
+                            Watch for Phishing
+                        </h3>
+
+                        <p>
+                            Do not click suspicious links or provide
+                            sensitive information to unknown sources.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            🔄
+                        </div>
+
+                        <h3>
+                            Keep Software Updated
+                        </h3>
+
+                        <p>
+                            Install security updates for your operating
+                            system and applications.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Enable Two-Factor Authentication
+                        </h3>
+
+                        <p>
+                            Add an extra layer of protection to your
+                            online accounts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 CyberShield. Cybersecurity Awareness Platform.
+            </p>
+
+            <p>
+                Stay Alert • Stay Secure • Stay Protected 🛡️
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/news.js"></script>
+
+
+    <!-- ================= SEARCH FALLBACK ================= -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const searchInput =
+                    document.getElementById("newsSearch");
+
+                const searchButton =
+                    document.getElementById("searchNews");
+
+                const clearButton =
+                    document.getElementById("clearSearch");
+
+                if (!searchInput || !searchButton) {
+                    console.error(
+                        "News search elements not found."
+                    );
+
+                    return;
+                }
+
+
+                /*
+                 * The main search functionality is handled
+                 * inside news.js.
+                 *
+                 * This only makes sure the Clear button
+                 * reloads all news.
+                 */
+
+                if (clearButton) {
+
+                    clearButton.addEventListener(
+                        "click",
+                        function () {
+
+                            searchInput.value = "";
+
+                            searchInput.focus();
+
+                            searchButton.click();
+
+                        }
+                    );
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

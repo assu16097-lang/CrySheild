@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield AI Chatbot</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                🛡️ CyberShield
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="index.html#tools">Security Tools</a>
+
+                <a href="incident.html">Incident Help</a>
+
+                <a href="news.html">News</a>
+
+                <a href="about.html">About</a>
+
+                <a href="password.html" class="nav-button">
+                    Get Protected
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="badge">
+                    🤖 AI Security Assistant
+                </span>
+
+                <h1>CyberShield AI Chatbot</h1>
+
+                <p>
+                    Ask questions about cybersecurity, online safety,
+                    phishing, passwords and account protection.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="chat-section">
+
+            <div class="container">
+
+                <div class="chat-card">
+
+
+                    <!-- CHAT HEADER -->
+
+                    <div class="chat-header">
+
+                        <div>
+
+                            <h2>CyberShield AI</h2>
+
+                            <p>
+                                Your cybersecurity assistant
+                            </p>
+
+                        </div>
+
+                        <button
+                            id="clearChat"
+                            type="button"
+                            class="secondary-button">
+
+                            Clear Chat
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- CHAT MESSAGES -->
+
+                    <div
+                        id="chatMessages"
+                        class="chat-messages">
+
+                        <div class="chat-message ai">
+
+                            <div class="message-bubble">
+
+                                Hello! 👋 I'm CyberShield AI.
+                                Ask me anything about cybersecurity.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TYPING -->
+
+                    <div
+                        id="typing"
+                        class="typing hidden">
+
+                        CyberShield AI is typing...
+
+                    </div>
+
+
+                    <!-- SUGGESTIONS -->
+
+                    <div class="suggestions">
+
+                        <p>Try asking:</p>
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            What is phishing?
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            How can I protect my Gmail account?
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            How do I secure my Wi-Fi?
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            What should I do if my account is hacked?
+
+                        </button>
+                        <button id="clearChat" type="button">
+    Clear Chat
+</button>
+
+                    </div>
+
+
+                    <!-- CHAT FORM -->
+
+                    <form
+                        id="chatForm"
+                        class="chat-input-area">
+
+                        <input
+                            type="text"
+                            id="messageInput"
+                            placeholder="Type your cybersecurity question..."
+                            autocomplete="off"
+                            required>
+
+                        <button
+                            type="submit"
+                            class="primary-button">
+
+                            Send
+
+                        </button>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 CyberShield. Educational cybersecurity platform.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+    <script src="js/chatbot.js"></script>
+
+</body>
+
+</html>

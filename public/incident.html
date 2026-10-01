@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Incident Response Center | CyberShield</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🛡️</span>
+            Cyber<span class="logo-highlight">Shield</span>
+        </a>
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+        >
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="chatbot.html">Security Tools</a>
+            <a href="incident.html" class="active">Incident Help</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a href="scanner.html" class="nav-button">
+            Get Protected
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-label">
+            MODULE 04
+        </span>
+
+        <h1>Cyber Incident Response Center</h1>
+
+        <p>
+            Select the type of incident you're dealing with
+            to see practical response steps.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="incident-section">
+
+    <div class="container">
+
+        <div class="incident-grid">
+
+            <aside class="incident-sidebar">
+
+                <h3>
+                    Select an incident
+                </h3>
+
+                <button
+                    class="incident-option active"
+                    data-incident="account"
+                >
+                    🔐
+                    <span>Account Hacked</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="phone"
+                >
+                    📱
+                    <span>Phone Hacked</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="scam"
+                >
+                    🎣
+                    <span>Online Scam</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="upi"
+                >
+                    💳
+                    <span>UPI / Bank Fraud</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="malware"
+                >
+                    🦠
+                    <span>Malware Infection</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="ransomware"
+                >
+                    🔒
+                    <span>Ransomware</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="social"
+                >
+                    👤
+                    <span>Social Media Hacked</span>
+                </button>
+
+                <button
+                    class="incident-option"
+                    data-incident="email"
+                >
+                    ✉️
+                    <span>Email Account Hacked</span>
+                </button>
+
+            </aside>
+
+
+            <div class="incident-content">
+
+                <div
+                    id="incidentContent"
+                    class="incident-details"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="emergency-section">
+
+    <div class="container">
+
+        <div class="emergency-card">
+
+            <div class="emergency-icon">
+                🚨
+            </div>
+
+            <div>
+
+                <h2>
+                    Serious incident?
+                </h2>
+
+                <p>
+                    For financial fraud, identity theft, threats,
+                    major data loss or other serious incidents,
+                    contact your bank, service provider, relevant
+                    official support service or local authorities
+                    as appropriate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-bottom">
+        © 2026 CyberShield. Educational project.
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/incident.js"></script>
+
+</body>
+</html>

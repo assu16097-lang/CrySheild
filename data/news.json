@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Why Multi-Factor Authentication Matters",
+    "date": "2026-09-28",
+    "category": "Security Updates",
+    "severity": "MEDIUM",
+    "summary": "Multi-factor authentication adds an additional verification step and can reduce the impact of stolen passwords.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  },
+  {
+    "id": 2,
+    "title": "Phishing Emails Continue to Target Online Accounts",
+    "date": "2026-09-25",
+    "category": "Phishing",
+    "severity": "HIGH",
+    "summary": "Users should carefully inspect unexpected messages, sender addresses and links before providing sensitive information.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  },
+  {
+    "id": 3,
+    "title": "Ransomware Awareness: Protecting Important Files",
+    "date": "2026-09-22",
+    "category": "Ransomware",
+    "severity": "CRITICAL",
+    "summary": "Regular backups, software updates, strong authentication and security awareness can reduce ransomware-related risks.",
+    "readMore": "https://www.cisa.gov/stopransomware"
+  },
+  {
+    "id": 4,
+    "title": "Protecting Personal Information Online",
+    "date": "2026-09-18",
+    "category": "Privacy",
+    "severity": "LOW",
+    "summary": "Review privacy settings, minimize unnecessary data sharing and use unique passwords for important accounts.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  },
+  {
+    "id": 5,
+    "title": "Malware Prevention Basics",
+    "date": "2026-09-15",
+    "category": "Malware",
+    "severity": "HIGH",
+    "summary": "Keep operating systems and applications updated and avoid downloading files from untrusted sources.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  },
+  {
+    "id": 6,
+    "title": "How to Recognize Suspicious Links",
+    "date": "2026-09-10",
+    "category": "Phishing",
+    "severity": "MEDIUM",
+    "summary": "Unexpected domains, unusual URL structures and urgent requests for information can be warning signs.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  },
+  {
+    "id": 7,
+    "title": "Security Updates Should Not Be Ignored",
+    "date": "2026-09-06",
+    "category": "Security Updates",
+    "severity": "HIGH",
+    "summary": "Software updates can include security fixes that address vulnerabilities discovered after software was released.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  },
+  {
+    "id": 8,
+    "title": "Understanding Data Breach Notifications",
+    "date": "2026-09-02",
+    "category": "Data Breach",
+    "severity": "CRITICAL",
+    "summary": "If a service reports a data breach, review the affected information, change reused passwords and monitor relevant accounts.",
+    "readMore": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+  }
+]
